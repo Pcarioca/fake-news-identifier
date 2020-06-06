@@ -1,9 +1,4 @@
-
-
-
-
-
-
+document.addEventListener('DOMContentLoaded', (event)=>{   
 
     var todo1=" ";
     var todo2=" ";
@@ -20,12 +15,6 @@
     var todo13=" ";
     var todo14=" ";
     var todo15=" ";
-
-
-
-
-    document.addEventListener('DOMContentLoaded', (event)=>{
-    
     
     function add(){
         alert("Am intrat in functie");
@@ -73,17 +62,4 @@
    
 
 
-    
-
-
-
-
-
-    
-    
-    
-
-
-
-    
  });
