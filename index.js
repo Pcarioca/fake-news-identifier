@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var todo = [];
     document.getElementById("buton").onclick = add;
+    document.getElementById("button").onclick = storage;
     
     var i = 0;
     var cookie="";
@@ -23,20 +24,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
             i++;
             document.getElementById("input").value = "";
-
-            
-
-
-
-            
-
-
-
+            localStorage.setItem(i.toString(),da);
+            localStorage.setItem("nr",i.toString());
         }
 
     }
-    function hmm(){
-        alert(localStorage.il+" "+localStorage.todo);
+    function storage(){
+        var counter=localStorage.getItem("nr");
+        counter.toString();
+        var char = "";
+        for(var j=1;j<=counter;i++){
+            var todo2 = localStorage.getItem(j.toString());
+            char+=todo2+" "+"\n";
+
+        }
+        alert(char);
+
 
 
     }
