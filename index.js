@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function storage(){
         var counter=localStorage.getItem("nr");
-        counter.toString();
+        counter=parseInt(counter,10);
         var char = "";
-        for(var j=1;j<=counter;i++){
+        for(var j=0;j<=counter;i++){
             var todo2 = localStorage.getItem(j.toString());
-            char+=todo2+" "+"\n";
+            char+=todo2+"\n";
 
         }
         alert(char);
