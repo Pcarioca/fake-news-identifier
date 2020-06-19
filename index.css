@@ -2,7 +2,7 @@ body{
     background-color: rgb(39, 39, 43);
 }
 .verdemare{
-    color:rgb(255, 71, 71);
+    color:rgb(31, 204, 40);
     font-size:300%;
     font-weight: lighter;}
 .verdemic{
@@ -28,13 +28,13 @@ body{
     font-weight:bolder;
     font-size: 125%;}
 .input:hover{
-    border-color: rgb(255, 71, 71);
+    border-color: rgb(31, 204, 40);
     
     
 }
 .add{
     background-color: rgb(39, 39, 43);
-    color: rgb(255, 71, 71);
+    color: rgb(31, 204, 40);
     font-size: 250%;
     font-weight:bolder;
     border: none;
@@ -50,5 +50,15 @@ p{
     font-size: 140%;
     font-weight: bold;
 
+
+}
+#button{
+
+    width: 70%;
+    height: 150%;
+    background-color: rgb(36, 35, 37);
+    color: rgb(31, 204, 40);
+    font-weight: bolder;
+    font-size: 120%;
 
 }
