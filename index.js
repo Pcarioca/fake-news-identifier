@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    document.getElementById("input").onkeypress = tasta;
 
     if (localStorage.getItem("nr") == null||localStorage.getItem("nr") == undefined)     
     /* Daca utilizatorul nu a mai folosit platforma TO-do, atunci
@@ -133,6 +134,12 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.clear();
         location.reload();
 
+    }
+    function tasta(){
+        
+            var char = event.which || event.keyCode;
+            if(char==13) add();
+          
     }
 
 
