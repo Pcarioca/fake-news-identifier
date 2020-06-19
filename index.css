@@ -63,6 +63,16 @@ p{
     
     border-radius: 15px;
     border-color:rgb(28, 177, 35);
-    border-width: 6px;
+    border-width: 0.3rem;
     font-size: 1rem;
+    
+    
+}
+.button:hover{
+    background-color: rgb(28, 177, 35);
+    color: rgb(36, 35, 37);
+}
+
+#div1{
+    text-align-last: center;
 }
