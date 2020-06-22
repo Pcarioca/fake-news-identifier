@@ -1,14 +1,22 @@
 body{
+
     background-color: rgb(39, 39, 43);
+    
 }
 .verdemare{
+
     color:rgb(31, 204, 40);
     font-size:300%;
-    font-weight: lighter;}
+    font-weight: lighter;
+
+}
 .verdemic{
+
     color:rgb(255, 255, 255);
+
 }
 .input{
+
     background-color:rgb(39, 39, 43);
     border-color: rgb(39, 39, 43);
     border-bottom: white;
@@ -18,22 +26,30 @@ body{
     color:white;
     text-align: center;
     transition-duration: 0.3s;
+
 }
 .input::placeholder{
+
     color:rgb(99, 99, 99);
     font-weight:bolder;
-    font-size: 125%;}
+    font-size: 125%;
+
+}
 
 .input::ms-input-placeholder{
+
     color:rgb(99, 99, 99);
     font-weight:bolder;
-    font-size: 125%;}
+    font-size: 125%;
+
+}
 .input:hover{
+
     border-color: rgb(31, 204, 40);
-    
-    
+
 }
 .add{
+
     background-color: rgb(39, 39, 43);
     color: rgb(31, 204, 40);
     font-size: 250%;
@@ -44,14 +60,15 @@ body{
 
 }
 p{
+
     color:white;
+    padding-bottom: 1px;
+
 }
 .lista{
 
     font-size: 140%;
     font-weight: bold;
-
-
 }
 .button{
 
@@ -64,15 +81,38 @@ p{
     border-radius: 15px;
     border-color:rgb(28, 177, 35);
     border-width: 0.3rem;
-    font-size: 1rem;
-    
-    
+    font-size: 1rem; 
 }
 .button:hover{
+
     background-color: rgb(28, 177, 35);
     color: rgb(36, 35, 37);
 }
 
 #div1{
+
     text-align-last: center;
+
 }
+.minus{
+
+    color: red;
+    font-size: 300%;
+    background-color:rgb(39, 39, 43);
+    font-weight: bolder;
+    padding-bottom: 0px;
+    padding-top:0px;
+
+    
+}
+.minus:hover{
+
+    color: red;
+    font-size: 300%;
+    background-color:rgb(39, 39, 43);
+    font-weight: bolder;
+    border-width: 1px;
+    border-color: red;
+
+}
+
