@@ -59,6 +59,7 @@ body{
     color:white;
     text-align: center;
     transition-duration: 0.3s;
+    align-items: center;
 
 }
 .logon-inputs{
