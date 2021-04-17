@@ -3,9 +3,39 @@ body{
     background-color: rgb(39, 39, 43);
     
 }
+.info *{
+    text-align: center;
+}
+#site-result{
+    font-size: 60px;
+}
+#upvote-result{
+    color:green;
+}
+#downvote-result{
+    color:red;
+}
+#input-search{
+    width:88%;
+}
+#searchh{
+    width:fit-content;
+    height:fit-content;
+}
+#searchh:hover{
+    background-color: rgb(31, 112, 204);
+}
+#button1, #button2{
+    width:30%;
+    height:90%;
+    border-width: 1px;
+}
+.info{
+    color:white;
+}
 .verdemare{
 
-    color:rgb(31, 204, 40);
+    color:rgb(31, 112, 204);
     font-size:300%;
     font-weight: lighter;
 
@@ -14,6 +44,9 @@ body{
 
     color:rgb(255, 255, 255);
 
+}
+#result{
+    display: none;
 }
 .input{
 
@@ -26,6 +59,70 @@ body{
     color:white;
     text-align: center;
     transition-duration: 0.3s;
+
+}
+.logon-inputs{
+    margin:1%;
+    height:50px;
+    width:500px;
+    padding:3%;
+    background-color: rgb(39, 39, 43);
+    color: white;
+    font-size: 250%;
+    font-weight:bolder;
+    border: 2px solid white;
+    transition-duration: .1s;
+    
+}
+.butt{
+    color:white;
+    border-width: 10px;
+
+}
+.butt:hover{
+    background-color: rgb(31, 112, 204);
+}
+.logon-inputs::placeholder, .logon-inputs::ms-input-placeholder{
+    font-size: 100%;
+}
+.logon-inputs:hover{
+    border: 3px solid rgb(31, 112, 204);
+}
+.site{
+    font-size:30px;
+}
+.contt{
+    margin-left:35%;
+    margin-top:10%;
+}
+.lista{
+
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.white{
+    color:white;
+}
+.list{
+    color:white;
+    
+}
+
+.buttton{
+
+    width: 80%;
+    height: 100px;
+    background-color: rgb(36, 35, 37);
+    color: rgb(31, 112, 204);
+    font-weight: bolder;
+    
+    border-radius: 15px;
+    border-color:rgb(31, 112, 204);
+    border-width: 0.3rem;
+    font-size: 1rem; 
+
+
 
 }
 .input::placeholder{
@@ -45,13 +142,13 @@ body{
 }
 .input:hover{
 
-    border-color: rgb(31, 204, 40);
+    border-color: rgb(31, 112, 204);
 
 }
 .add{
 
     background-color: rgb(39, 39, 43);
-    color: rgb(31, 204, 40);
+    color: rgb(31, 112, 204);
     font-size: 250%;
     font-weight:bolder;
     border: none;
@@ -70,33 +167,52 @@ p{
     font-size: 140%;
     font-weight: bold;
 }
+.white{
+    color:white;
+}
+.list{
+    color:white;
+    
+}
+.site{
+    font-size:30px;
+}
 .button{
 
     width: 80%;
     height: 100px;
     background-color: rgb(36, 35, 37);
-    color: rgb(31, 204, 40);
+    color: rgb(31, 112, 204);
     font-weight: bolder;
     
     border-radius: 15px;
-    border-color:rgb(28, 177, 35);
+    border-color:rgb(31, 112, 204);
     border-width: 0.3rem;
     font-size: 1rem; 
 
 
 
 }
-
-
-.button.minus{
-
+#vanish{
+    width: 80%;
+    height: 100px;
+    background-color: rgb(36, 35, 37);
+    color: rgb(31, 112, 204);
+    font-weight: bolder;
     
-
+    border-radius: 15px;
+    border-color:rgb(31, 112, 204);
+    border-width: 0.3rem;
+    font-size: 1rem; 
+}
+#vanish:hover{
+    background-color: rgb(31, 112, 204);
+    color: rgb(36, 35, 37);
 }
 
 .button:hover{
 
-    background-color: rgb(28, 177, 35);
+    background-color: rgb(31, 112, 204);
     color: rgb(36, 35, 37);
 }
 

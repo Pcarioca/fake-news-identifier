@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Login</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="form.js"></script>
+
+        <!-- BOOTSTRAP AND CRAP-->
+
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+        <div class="middle container contt">
+        <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
+        <input type="password" placeholder="password" class="logon-inputs" id="password" /> <br>
+        <button class="butt btn" onclick= "signUp()" id="signUp">Sign Up</button>
+        <button class="butt btn" onclick= "signIn()" id="signIn">Sign In</button>
+        </div>
+</body>
+
+</html>

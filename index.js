@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     var todo = [];
-    document.getElementById("buton").onclick = add;
-    document.getElementById("button").onclick = storage;
-    document.getElementById("vanish").onclick = vanish;
+    //document.getElementById("buton").onclick = add;
+    //document.getElementById("button").onclick = storage;   !!!ASTEA NU MAI SUNT UTILE
+    //document.getElementById("vanish").onclick = vanish;
 
 
 
