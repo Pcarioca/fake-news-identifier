@@ -95,6 +95,16 @@ body{
     width:300px;
     }
 }
+@media only screen and (max-width:323px){
+    .logon-inputs{
+    width:250px;
+    }
+}
+@media only screen and (max-width:278px){
+    .logon-inputs{
+    width:200px;
+    }
+}
 .butt{
     color:white;
     border-width: 10px;
