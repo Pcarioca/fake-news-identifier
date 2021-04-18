@@ -80,6 +80,21 @@ body{
     width:450px;
     }
 }
+@media only screen and (max-width:475px){
+    .logon-inputs{
+    width:400px;
+    }
+}
+@media only screen and (max-width:425px){
+    .logon-inputs{
+    width:350px;
+    }
+}
+@media only screen and (max-width:380px){
+    .logon-inputs{
+    width:300px;
+    }
+}
 .butt{
     color:white;
     border-width: 10px;
