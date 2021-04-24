@@ -10,6 +10,12 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="form.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script> <!-- reCAPTCHA!!!!! -->
+        <script>
+                function onSubmit(token) {
+                        document.getElementById("demo-form").submit();
+                }
+        </script>
 
         <!-- BOOTSTRAP AND CRAP-->
 
@@ -37,12 +43,16 @@
                 <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-0 col-0"></div>
                         <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
-                        <div class="middle container contt">
-                                <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
-                                <input type="password" placeholder="password" class="logon-inputs" id="password" /> <br>
-                                <button class="butt btn" onclick="signUp()" id="signUp">Sign Up</button>
-                                <button class="butt btn" onclick="signIn()" id="signIn">Sign In</button>
-                        </div></div>
+                                <div class="middle container contt">
+                                        <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
+                                        <input type="password" placeholder="password" class="logon-inputs"
+                                                id="password" /> <br>
+                                        <button class="butt btn g-recaptcha" data-sitekey="reCAPTCHA_site_key"
+                                                data-callback='onSubmit' data-action='submit' onclick="signUp()"
+                                                id="signUp">Sign Up</button>
+                                        <button class="butt btn" onclick="signIn()" id="signIn">Sign In</button>
+                                </div>
+                        </div>
                         <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0"></div>
                 </div>
         </div>
