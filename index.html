@@ -10,15 +10,15 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="form.js"></script>
-      <!--  <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>  reCAPTCHA!!!!! 
+        <script src="https://www.google.com/recaptcha/api.js"></script> <!--  reCAPTCHA!!!!! -->
         <script>
                 function onSubmit(token) {
-                        document.getElementById("demo-form").submit();
+                        document.getElementById("form").submit();
                 }
         </script>
-        <script src="https://www.recaptcha.net/recaptcha/api.js?render=reCAPTCHA_site_key"></script>-->
+        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
 
-        <!-- BOOTSTRAP AND CRAP-->
+        
 
         <link rel="icon" href="icon.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -44,7 +44,7 @@
                 <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-0 col-0"></div>
                         <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
-                                <form class="middle container contt" data-netlify-recaptcha="true" data-netlify="true" method="POST">
+                                <form class="middle container contt" id="form" data-netlify-recaptcha="true" data-netlify="true" method="POST">
                                         <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
                                         <input type="password" placeholder="password" class="logon-inputs"
                                                 id="password" /> <br>
@@ -52,8 +52,9 @@
                                                 data-callback='onSubmit' data-action='submit' onclick="signUp()"
                                                 id="signUp">Sign Up</button>
                                         <button class="butt btn" type="submit" onclick="signIn()" id="signIn">Sign In</button>
+                                        <div id="widget"></div>
                                 </form>
-                                <div data-netlify-recaptcha="true"></div>
+                                
                         </div>
                         <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0"></div>
                 </div>
