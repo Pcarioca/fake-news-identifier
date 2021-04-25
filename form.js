@@ -68,7 +68,7 @@ function signIn() {
         });
 
 }
-document.getElementById("signIn").addEventHandler('click', signIn);
+document.getElementById("signIn").addEventListener('click', signIn);
 
 
 
