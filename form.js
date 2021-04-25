@@ -151,8 +151,8 @@ window.addEventListener("load", function () {
                     }
 
                     else {
-                        site.innerHTML = `site-ul ${input.value}`
-                        console.log("line 152")
+                        site.innerHTML = `site-ul ${input.value}`;
+                        console.log("line 152");
                         console.log(input);
                         trust.innerHTML = `1 a votat increderea site-ului`;
                         untrust.innerHTML = `0 nu au votat increderea site-ului`;
@@ -162,7 +162,7 @@ window.addEventListener("load", function () {
                                 upVotes: 1,
                                 downVotes: 0
                             }
-                        )
+                        );
                         inputDOM.value = "";
                     }
                 })
@@ -182,10 +182,10 @@ window.addEventListener("load", function () {
 
                 if (websites.find(element => element === input.value)) {
 
-                    alert("Ai mai votat o data")
+                    alert("Ai mai votat o data");
                 }
                 else {
-                    site.innerHTML = `site-ul ${input.value}`
+                    site.innerHTML = `site-ul ${input.value}`;
 
                     database.ref('users/' + user.uid).push(
                         input.value
@@ -204,11 +204,11 @@ window.addEventListener("load", function () {
                                 {
                                     downVotes: downVotes + 1
                                 }
-                            )
+                            );
                             inputDOM.value = "";
                         }
                         else {
-                            site.innerHTML = `site-ul ${input.value}`
+                            site.innerHTML = `site-ul ${input.value}`;
                             trust.innerHTML = `0 au votat increderea site-ului`;
                             untrust.innerHTML = `1 nu au votat increderea site-ului`;
 
@@ -217,7 +217,7 @@ window.addEventListener("load", function () {
                                     upVotes: 0,
                                     downVotes: 1
                                 }
-                            )
+                            );
                             inputDOM.value = "";
                         }
                     })
@@ -227,7 +227,7 @@ window.addEventListener("load", function () {
                 const url = input.value.replace(".", "");
                 database.ref('users/' + user.uid).push(
                     input.value
-                )
+                );
                 database.ref('sites/' + url).get().then(response => {
 
                     if (response.val()) {
@@ -254,14 +254,14 @@ window.addEventListener("load", function () {
                                 upVotes: 0,
                                 downVotes: 1
                             }
-                        )
+                        );
                         inputDOM.value = "";
                     }
-                })
+                });
 
             }
 
-        })
+        });
 
 
     }
