@@ -36,6 +36,7 @@ window.addEventListener("load", function () {
 
 
     }
+    document.getElementById("signUp").addEventListener("click", signUp);
     function checkSite() {
         const url = inputSearch.value.replace(".", "");
         database.ref('sites/' + url).get().then(response => {
