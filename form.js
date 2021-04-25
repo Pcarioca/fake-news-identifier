@@ -37,6 +37,7 @@ window.addEventListener("load", function () {
 
     }
     document.getElementById("signUp").addEventListener("click", signUp);
+
     function checkSite() {
         const url = inputSearch.value.replace(".", "");
         database.ref('sites/' + url).get().then(response => {
@@ -69,7 +70,7 @@ window.addEventListener("load", function () {
             });
 
     }
-    document.getElementById("signIn").addEventListener("click", signIn);
+
 
 
 
@@ -271,6 +272,9 @@ window.addEventListener("load", function () {
         window.location = 'index.html';
         alert("Signed Out");
     }
+    document.getElementById("signIn").addEventListener("click", signIn);
+    document.getElementById("signUp").addEventListener("click", signUp);
+    document.getElementById("signOut").addEventListener("click", signOut);
 
     //incepem sa codam captcha
     var onloadCallback = function () {
