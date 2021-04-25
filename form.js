@@ -272,7 +272,7 @@ window.addEventListener("load", function () {
     }
     document.getElementById("signIn").addEventListener("click", signIn);
     document.getElementById("signUp").addEventListener("click", signUp);
-    document.getElementById("signOut").addEventListener("click", signOut);
+    document.getElementById("button1").addEventListener("click", signOut);
 
     //incepem sa codam captcha
     var onloadCallback = function () {
