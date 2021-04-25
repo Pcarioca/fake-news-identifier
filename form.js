@@ -1,4 +1,4 @@
-document.body.addEventListener("load", function () {
+window.addEventListener("load", function () {
 
     // Your web app's Firebase configuration
     var firebaseConfig = {
