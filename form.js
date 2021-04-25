@@ -90,9 +90,7 @@ window.addEventListener("load", function () {
                 else {
 
 
-                    database.ref('users/' + user.uid).push(
-                        input.value
-                    )
+                    database.ref('users/' + user.uid).push(input.value);
                     const url = input.value.replace(".", "");
                     database.ref('sites/' + url).get().then(response => {
 
@@ -112,7 +110,7 @@ window.addEventListener("load", function () {
                             )
                             inputDOM.value = "";
                         } else {
-                            site.innerHTML = `site-ul ${input.value}`
+                            site.innerHTML = `site-ul ${input.value}`;
                             console.log("line 114");
 
                             trust.innerHTML = `1 a votat increderea site-ului`;
