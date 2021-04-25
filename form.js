@@ -60,8 +60,8 @@ function signIn() {
     auth.signInWithEmailAndPassword(email.value, password.value)
         .then((user) => {
             console.log(user);
-            console.log(auth.currentUser)
-            window.location = 'home.html'
+            console.log(auth.currentUser);
+            window.location = 'home.html';
         })
         .catch((error) => {
             alert(error.message);
@@ -79,11 +79,11 @@ function upScore() {
 
     database.ref('users/' + user.uid).get().then(response => {
         if (response.val()) {
-            const websites = Object.values(response.val())
+            const websites = Object.values(response.val());
 
             if (websites.find(element => element === input.value)) {
 
-                alert("Ai mai votat o data")
+                alert("Ai mai votat o data");
             }
             else {
 
@@ -97,7 +97,7 @@ function upScore() {
                     if (response.val()) {
                         let upVotes = response.val().upVotes;
                         let downVotes = response.val().downVotes;
-                        site.innerHTML = `site-ul ${input}`
+                        site.innerHTML = `site-ul ${input}`;
 
                         console.log("line 101");
                         trust.innerHTML = `${upVotes + 1} au votat increderea site-ului`;
@@ -109,10 +109,9 @@ function upScore() {
                             }
                         )
                         inputDOM.value = "";
-                    }
-                    else {
+                    } else {
                         site.innerHTML = `site-ul ${input.value}`
-                        console.log("line 114")
+                        console.log("line 114");
 
                         trust.innerHTML = `1 a votat increderea site-ului`;
                         untrust.innerHTML = `0 nu au votat increderea site-ului`;
@@ -128,8 +127,7 @@ function upScore() {
                 })
 
             }
-        }
-        else {
+        } else {
             const url = input.value.replace(".", "");
             database.ref('users/' + user.uid).push(
                 input.value
@@ -274,12 +272,12 @@ function signOut() {
 }
 
 //incepem sa codam captcha
-var onloadCallback = function() {
+var onloadCallback = function () {
     // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
     // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
     widgetId1 = grecaptcha.render('widget', {
-      'sitekey' : '6LcTw7caAAAAAEAClZxvKgnhULHdBzPs-Npg_JZc',
-      'theme' : 'dark'
+        'sitekey': '6LcTw7caAAAAAEAClZxvKgnhULHdBzPs-Npg_JZc',
+        'theme': 'dark'
     });
-    
-  };
+
+};
