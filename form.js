@@ -270,8 +270,8 @@ window.addEventListener("load", function () {
         window.location = 'index.html';
         alert("Signed Out");
     }
-    document.getElementById("signIn").addEventListener("click", signIn);
-    document.getElementById("signUp").addEventListener("click", signUp);
+    //document.getElementById("signIn").addEventListener("click", signIn);
+    //document.getElementById("signUp").addEventListener("click", signUp);
     document.getElementById("button1").addEventListener("click", signOut);
 
     //incepem sa codam captcha
