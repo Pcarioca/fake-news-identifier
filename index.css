@@ -59,7 +59,6 @@ body{
     color:white;
     text-align: center;
     transition-duration: 0.3s;
-    align-items: center;
 
 }
 .logon-inputs{
@@ -69,41 +68,11 @@ body{
     padding:3%;
     background-color: rgb(39, 39, 43);
     color: white;
-    font-size: 150%;
+    font-size: 250%;
     font-weight:bolder;
     border: 2px solid white;
     transition-duration: .1s;
     
-}
-@media only screen and (max-width:538px){
-    .logon-inputs{
-    width:450px;
-    }
-}
-@media only screen and (max-width:475px){
-    .logon-inputs{
-    width:400px;
-    }
-}
-@media only screen and (max-width:425px){
-    .logon-inputs{
-    width:350px;
-    }
-}
-@media only screen and (max-width:380px){
-    .logon-inputs{
-    width:300px;
-    }
-}
-@media only screen and (max-width:323px){
-    .logon-inputs{
-    width:250px;
-    }
-}
-@media only screen and (max-width:278px){
-    .logon-inputs{
-    width:200px;
-    }
 }
 .butt{
     color:white;
@@ -123,7 +92,7 @@ body{
     font-size:30px;
 }
 .contt{
-    margin-left:0%;
+    margin-left:35%;
     margin-top:1%;
 }
 .lista{

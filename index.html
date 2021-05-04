@@ -9,16 +9,9 @@
         <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
         <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-        
-        <script src="https://www.google.com/recaptcha/api.js"></script> <!--  reCAPTCHA!!!!! -->
-        <script>
-                function onSubmit(token) {
-                        document.getElementById("form").submit();
-                }
-        </script>
-        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+        <script src="form.js"></script>
 
-        
+        <!-- BOOTSTRAP AND CRAP-->
 
         <link rel="icon" href="icon.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,38 +22,21 @@
 </head>
 
 <body>
-        <div class="container-fluid">
-                <div class="row" id="logon-fake">
-                        <div class="col-sm-4 col-xs-1 col-3">
+        <div class="row"  id="logon-fake">
+                <div class="col-sm-4 col-xs-1">
 
-                        </div>
-                        <div class="col-sm-8 col-xs-8 col-8">
-                                <h1><span class="verdemare">FAKE </span><span class="verdemic"
-                                                style="display: inline-block;">news identifier</span>
-                                </h1>
-                        </div>
-                        <div class="col-sm-3 col-1"></div>
                 </div>
-                <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-0 col-0"></div>
-                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-12">
-                                <form class="middle container contt" id="form" data-netlify-recaptcha="true" data-netlify="true" method="POST">
-                                        <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
-                                        <input type="password" placeholder="password" class="logon-inputs"
-                                                id="password" /> <br>
-                                        <button class="butt btn g-recaptcha" type="submit" data-sitekey="6LcTw7caAAAAAEAClZxvKgnhULHdBzPs-Npg_JZc"
-                                                data-callback='onSubmit' data-action='submit' 
-                                                id="signUp" type="submit" onclick="signUp()">Sign Up</button>
-                                        <button class="butt btn" type="submit" onclick="signIn()" type="submit" id="signIn">Sign In</button>
-                                        <div id="widget"></div>
-                                </form>
-                                
-                        </div>
-                        <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0"></div>
+                <div class="col-sm-4 col-xs-8">
+                        <h1><span class="verdemare">FAKE </span><span class="verdemic">news identifier</span></h1>
                 </div>
+                <div class="col-sm-3"></div>
         </div>
-<script src="form.js"></script>
-
+        <div class="middle container contt">
+                <input type="email" class="logon-inputs" placeholder="email" id="email" /> <br>
+                <input type="password" placeholder="password" class="logon-inputs" id="password" /> <br>
+                <button class="butt btn" onclick="signUp()" id="signUp">Sign Up</button>
+                <button class="butt btn" onclick="signIn()" id="signIn">Sign In</button>
+        </div>
 </body>
 
 </html>
